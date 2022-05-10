@@ -1,5 +1,6 @@
 PRA QUE SERVE O GIT?
-sistema de versionamento, para controlar versões de um projeto que estamos fazendo para vermos o histórico do que foi feito, como estava antes e agora, a diferença entre eles.
+sistema de versionamento, para controlar versões de um projeto que estamos fazendo para vermos
+o histórico do que foi feito, como estava antes e agora, a diferença entre eles.
 
 GIT o que é:
 Ferramenta que gerencia as versões do projeto
@@ -28,19 +29,22 @@ CONFIGURAR SSH PARA GITHUB
 O que é SSH? Protocolo para comunicação de dados com segurança
 Github não faz mais a autenticação com usuário e senha
 
-com o SSH você cadastra de forma prévia os computadores que podem acessar o GITHUB em seu nome onde outros computadores não conseguem acessar
+com o SSH você cadastra de forma prévia os computadores que podem acessar o GITHUB em seu nome onde 
+outros computadores não conseguem acessar
 
 1) Gerar a chave SSH
 
 2) Cadastrar a mesma no Github
 
 PARA GERAR A CHAVE SEGUIR O SEGUINTE
-https://docs.github.com/pt/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+https://docs.github.com/pt/authentication/connecting-to-github-with-ssh
+/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
 
 COMANDOS USADOS
 $ ssh-keygen -t ed25519 -C "your_email@example.com"
 
-vai pedir pra escolher onde quer salvar a chave SSH e se vai querer definir uma senha, pode dar apenas enter se não quiser mudar o local onde vai ser salvo a chave e se não quiser definir nenhuma senha.
+vai pedir pra escolher onde quer salvar a chave SSH e se vai querer definir uma senha, pode dar apenas enter se não quiser 
+mudar o local onde vai ser salvo a chave e se não quiser definir nenhuma senha.
 
 NO MEU CASO FICOU SALVO EM C:\Users\Alexandre José\.ssh
 
@@ -99,7 +103,8 @@ PRA FINALIZAR E FRIZAR
 
 Caso seja feita uma modificação no projeto, e você queira enviar pro git uma nova versão do mesmo
 primeiro utilizar o comando: GIT STATUS
-com este comando ele vai exibir se foi feito alguma modificação no mesmo, dizer se não tem nada para salvar, e se tiver algo para salvar também vai exibir (geralmente aparece depois de rodar o comando git add.)
+com este comando ele vai exibir se foi feito alguma modificação no mesmo, dizer se não tem nada para salvar, 
+e se tiver algo para salvar também vai exibir (geralmente aparece depois de rodar o comando git add.)
 
 Git add .     //para jogar os arquivos na area de Stage
 
@@ -107,15 +112,6 @@ E depois para salvar a nova versão
 Git commit -m "Descrever o que foi modificado"
 
 Para enviar a modificação ao github basta digitar o comando: 
-git push   //se for na segunda vez em diante que está sendo enviada uma nova versão do projeto o comando vai funcionar, caso seja a primeira versão usar o seguinte comando ->   git push -u origin main
-
-
-
-
-
-
-
-
-
-
+git push   //se for na segunda vez em diante que está sendo enviada uma nova versão do projeto o comando vai funcionar, 
+	   //caso seja a primeira versão usar o seguinte comando ->   git push -u origin main
 
